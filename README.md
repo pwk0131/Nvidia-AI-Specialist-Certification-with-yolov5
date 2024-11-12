@@ -1,5 +1,7 @@
 # Nvidia AI Specialist Certification with yolov5
 
+"If you want a detailed view, check out the Notion report ->" [Go to Notion](https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b)
+
 ## **주제(Title)**
 
 AI 객체 인식을 활용한 주방 내 위험 요소 탐지  
