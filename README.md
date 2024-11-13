@@ -364,6 +364,8 @@ Image Detect Result
 
 [see more](https://drive.google.com/drive/folders/13xB80xuIFD0sUOan4zkytTEJFSH8nIzC?usp=drive_link) - go to googleDrive  
 [see more notion](https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b)
+
+
 ---
 
 # 마무리(Wrap up)
