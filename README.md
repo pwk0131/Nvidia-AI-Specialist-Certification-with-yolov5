@@ -363,7 +363,7 @@ Image Detect Result
 ![f90137f4-5f3d-49c8-8bf2-54fd9af370da](https://github.com/user-attachments/assets/c5562c11-b089-43af-b548-848977073463)  
 
 [see more](https://drive.google.com/drive/folders/13xB80xuIFD0sUOan4zkytTEJFSH8nIzC?usp=drive_link) - go to googleDrive  
-[see more notion](https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b)
+[see more notion](https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b) - go to notionReport
 
 
 ---
