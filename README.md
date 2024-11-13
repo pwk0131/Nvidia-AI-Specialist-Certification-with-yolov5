@@ -1,7 +1,8 @@
 # Nvidia AI Specialist Certification with yolov5
 
-If you want a detailed view, check out the Notion report -> 
-<a href="https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b" target="blank">Go to Notion</a>
+A more detailed project description than the README has been created on Notion report -> 
+<a href="https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b" target="blank">Go to Notion</a>  
+
 
 ## **주제(Title)**
 
@@ -19,23 +20,33 @@ YOLOv5를 활용하여 이러한 위험 요소를 실시간으로 감지하고, 
 
 ## 영상 취득 방법 (Video Acquisition Method)  
 
-주방 내 위험요소로 판단되는 객체들의 위치를 이동 시키며 촬영했다. 총 세 개의 비디오를 사용했으며, 세 가지 비디오 모두 학습용, 검증용으로 사용하였다.
+직접 주방을 촬영하여 취득했다. 총 다섯 개의 동영상을 촬영했으며  video1, video2, video3 는 AI학습에 사용하였고 물체를 다양한 각도로 자세히 관찰하는 것을 중점으로 촬영하였다. video4, video5 은 세 가지 동영상으로 학습된 AI의 성능을 검증하는 용도로 촬영하였다.
 
-*Objects deemed hazardous in the kitchen were moved to different positions while recording. A total of three videos were used, All three videos were used for both training and validation.*  
+*I captured footage directly from the kitchen, recording a total of five videos. videos 1,2, and video 3 were used for AI training, focusing on observing objects from various angles in detail. video 4 and video 5 were recorded to test the performance of the AI trained on the first three videos.*  
 
-[video 1](https://youtube.com/shorts/8PbK8_urNM4)
-[video 2](https://youtube.com/shorts/Ebps2Vl3PAA)
-[video 3](https://youtube.com/shorts/UaPk0zsZzjg)
+Video for AI training  
+&nbsp; [video 1](https://youtube.com/shorts/S8DIFcqSKOg?feature=share)  
+&nbsp; [video 2](https://youtube.com/shorts/Ebps2Vl3PAA?feature=share)  
+&nbsp; [video 3](https://youtube.com/shorts/UaPk0zsZzjg?feature=share)  
+
+Video for validation  
+&nbsp; [video 4](https://youtube.com/shorts/omjmIny2SNg?feature=share)  
+&nbsp; [video 5](https://youtube.com/shorts/XNlsIMikUIA?feature=share) 
+
+GoogleDrive  
+&nbsp; [videos](https://drive.google.com/drive/folders/1GNmb12JI663gPk5rnA_XMYyvPFn5h24l?usp=drive_link)
 
 ## 프로젝트 진행(Project Progress)
 
-### 1.VABMIX_2  (Video editing tool)
+### 1. VABMIX_2  (Video editing tool)
 
 영상은 640x640 해상도로 제작하였으며, 해상도 조절 도구로는 '뱁믹스2'를 사용했다.
 
 **The video was created with a resolution of 640x640, and 'VABmix2' was used as the resolution adjustment tool.*
 
 ![화면_캡처_2024-11-11_213738](https://github.com/user-attachments/assets/e1127b75-6a48-4311-baba-f4b44ccd45b7)  
+
+---
 
 ### 2. 파일 설정하기 (Setting File)  
 편집한 영상의 이미지 라벨링은 [DarkLabel](https://github.com/darkpgmr/DarkLabel) 을 사용하였다.
@@ -52,10 +63,13 @@ YOLOv5를 활용하여 이러한 위험 요소를 실시간으로 감지하고, 
 
 *For labeling the kitchen hazards, such as breakable "bowl", sharp "scissors", and "knife", a `risk_classes` section was created with the elements set to `["bowl", "scissors", "knife"]`.*
 
-*After that, the labeling will be carried out by setting it in `format_10`.*
+*After that, the labeling will be carried out by setting it in `format_10`.*  
 
-![화면_캡처_2024-11-11_235607](https://github.com/user-attachments/assets/0f3ef6c9-b274-4b87-9ec7-1e6275ca1e2e)
-![화면_캡처_2024-11-11_234221](https://github.com/user-attachments/assets/ceb3b1e3-5cad-4f0b-b6ba-6004a361e3bb)  
+![스크린샷_2024-11-13_101356](https://github.com/user-attachments/assets/da2bfa78-744a-4eee-a8e4-ae4d9e3c958c)  
+
+![스크린샷_2024-11-13_112902](https://github.com/user-attachments/assets/ec320967-eda5-4514-95b9-e637e59d9a4b)
+
+  
 
 `darklabel.yml` 파일을 설정했다면, 이후 모델 학습에 필요한 `data.yaml` 파일도 설정해야 한다.
 
@@ -66,6 +80,8 @@ YOLOv5를 활용하여 이러한 위험 요소를 실시간으로 감지하고, 
 *The `data.yaml` file should list the elements defined in `darklabel.yml` and specify the file paths necessary for model training. Finally, complete the configuration by indicating the total number of elements.*  
 
 ![스크린샷_2024-11-12_092458](https://github.com/user-attachments/assets/06dbac8c-ce1a-42a0-9633-6ed8d108e3af)  
+
+---
 
 ### 3. __DarkLabel 사용하기 (using DarkLabel)__
 DarkLabel을 실행하여 직접 취득한 영상을 “Open video” 버튼을 클릭하여 화면에 띄운다.
@@ -90,8 +106,9 @@ DarkLabel을 실행하여 직접 취득한 영상을 “Open video” 버튼을 
 
 [images](https://drive.google.com/drive/folders/1c5ISbHS8qT-4rgjubeotzT8SvsICsifp?usp=drive_link) - go to GoogleDrive  
 
+ ![화면 캡처 2024-11-13 190335](https://github.com/user-attachments/assets/80d417df-19b5-4d19-9ba0-2651b79997a4)
 
-![화면_캡처_2024-11-12_000854](https://github.com/user-attachments/assets/99ccc884-804d-430f-99bb-ed5bda194913)  
+---
 
 ### 4. 라벨링 결과 (Result of Labeling )  
 
@@ -110,7 +127,10 @@ DarkLabel을 실행하여 직접 취득한 영상을 “Open video” 버튼을 
 *This data will be used for training a `yolov5` model.*
 
 [labels](https://drive.google.com/drive/folders/1cEuR1P9Xbd9wEla88cRfPvMtj98iXEhM?usp=drive_link) - go to GoogleDrive  
-![902aed15-c700-4ec2-9c4e-6a5f420e4b27](https://github.com/user-attachments/assets/9234c78f-83fe-43c5-af31-c7a5d4c1387a)  
+
+![화면 캡처 2024-11-13 190614](https://github.com/user-attachments/assets/b465e2f7-9d03-4824-b3f9-d942f4f4547c)  
+
+---
 
 ### 5. yolov5 모델 학습 시작(Start training yolov5 model) feat colab  
 
@@ -118,20 +138,76 @@ DarkLabel을 실행하여 직접 취득한 영상을 “Open video” 버튼을 
 
 [colab](https://colab.google/)을 실행한 후 자신의 구글 드라이브와 연결한다.
 
-*After running colab.google, connect it to your Google Drive.*  
+*After running [colab](https://colab.google/), connect it to your Google Drive.*  
 
-![2be6ed01-7520-4e85-a452-d3c3c5d23224](https://github.com/user-attachments/assets/bf001aa9-478e-4336-86c6-5a299699475c)  
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+
+%cd /content/drive/MyDrive #Go to the path your set, this is example
+%pwd
+```
 
 #### 5-2. yolov5 repository clone  
 [yolov5](https://github.com/ultralytics/yolov5) 레포지토리를 클론 후 설치한다.
 
 *Clone the [yolov5](https://github.com/ultralytics/yolov5) repository and install it.*  
 
+```python
+# start clone yolov5
+!git clone https://github.com/ultralytics/yolov5
+%cd yolov5
+%pip install -qr requirements.txt
+```
+
 ![화면_캡처_2024-11-12_012808](https://github.com/user-attachments/assets/496fc324-c2cf-4ee6-aae3-79adfd38a5d2)  
+
+---
 
 #### 5-3. _preproc  and Create_npy  
 
-![스크린샷 2024-11-12 161101](https://github.com/user-attachments/assets/1981ded5-19a3-40e2-b63e-8453443514ee)  
+```python
+import numpy as np
+import tensorflow as tf
+import os
+from PIL import Image
+from tensorflow.python.eager.context import eager_mode
+
+def _preproc(image, output_height=512, output_width=512, resize_side=512):
+    ''' imagenet-standard: aspect-preserving resize to 256px smaller-side, then central-crop to 224px'''
+    with eager_mode():
+        h, w = image.shape[0], image.shape[1]
+        scale = tf.cond(tf.less(h, w), lambda: resize_side / h, lambda: resize_side / w)
+        resized_image = tf.compat.v1.image.resize_bilinear(tf.expand_dims(image, 0), [int(h*scale), int(w*scale)])
+        cropped_image = tf.compat.v1.image.resize_with_crop_or_pad(resized_image, output_height, output_width)
+        return tf.squeeze(cropped_image)
+
+def Create_npy(imagespath, imgsize, ext) :
+    images_list = [img_name for img_name in os.listdir(imagespath) if
+                os.path.splitext(img_name)[1].lower() == '.'+ext.lower()]
+    calib_dataset = np.zeros((len(images_list), imgsize, imgsize, 3), dtype=np.float32)
+
+    for idx, img_name in enumerate(sorted(images_list)):
+        img_path = os.path.join(imagespath, img_name)
+        try:
+            if os.path.getsize(img_path) == 0:
+                print(f"Error: {img_path} is empty.")
+                continue
+
+            img = Image.open(img_path)
+            img = img.convert("RGB")
+            img_np = np.array(img)
+
+            img_preproc = _preproc(img_np, imgsize, imgsize, imgsize)
+            calib_dataset[idx,:,:,:] = img_preproc.numpy().astype(np.uint8)
+            print(f"Processed image {img_path}")
+
+        except Exception as e:
+            print(f"Error processing image {img_path}: {e}")
+
+    np.save('calib_set.npy', calib_dataset)
+
+```
 
 `_preproc` 함수는 이미지를 크기 조정하고 중앙 부분을 잘라내는 작업을 수행한다.
 
@@ -161,16 +237,21 @@ DarkLabel을 실행하여 직접 취득한 영상을 “Open video” 버튼을 
 
 *The `Create_npy` function loads all images with a specific extension (`ext`) from a given directory (`imagespath`).*
 
-*It opens each image file, applies preprocessing, and stores the processed image in an array called `calib_dataset`.*
+*It opens each image file, applies preprocessing, and stores the processed image in an array called `calib_dataset`.*  
 
-*- If the image file size is `0`, it outputs an error message and skips the file.*
-*- If the image format is `RGBA` or another format, it forcibly converts it to `RGB` for processing.*
-*- The preprocessed image is converted to `uint8` format before being stored in the array.*
+- *If the image file size is `0`, it outputs an error message and skips the file.*  
+- *If the image format is `RGBA` or another format, it forcibly converts it to `RGB` for processing.*  
+- *The preprocessed image is converted to `uint8` format before being stored in the array.*  
 
 *Finally, it saves all image data to a `calib_set.npy` file.*  
 
+---
+
 #### 5-4. 모델 학습하기 (Train the model)  
-``` !python train.py  --img 640 --batch 16 --epochs 300 --data /content/drive/MyDrive/yolov5/data.yaml --weights yolov5n.pt --cache ```  
+```python
+# Training
+!python train.py  --img 640 --batch 16 --epochs 300 --data /content/drive/MyDrive/yolov5/data.yaml --weights yolov5n.pt --cache
+```  
 
 이 코드는 YOLOv5 모델을 훈련하기 위한 명령어 이다.
 
@@ -186,25 +267,29 @@ DarkLabel을 실행하여 직접 취득한 영상을 “Open video” 버튼을 
 
 *This command is used to train the YOLOv5 model. Each parameter defines a setting for the model training, with the following meanings:*
 
-*- `!python train.py`: Runs the YOLOv5 `train.py` file to start model training.*
-*- `-img 640`: Sets the input image size to 640x640 pixels.*
-*- `-batch 16`: Sets the batch size to 16, meaning 16 images are used per training step.*
-*- `-epochs 300`: Trains the model over a total of 300 epochs.*
-*- `-data /content/drive/MyDrive/yolov5/data.yaml`: Specifies the path to the dataset configuration file, which includes class information and the paths for training and validation images.*
+- *`!python train.py`: Runs the YOLOv5 `train.py` file to start model training.*
+- *`-img 640`: Sets the input image size to 640x640 pixels.*
+- *`-batch 16`: Sets the batch size to 16, meaning 16 images are used per training step.*
+- *`-epochs 300`: Trains the model over a total of 300 epochs.*
+- *`-data /content/drive/MyDrive/yolov5/data.yaml`: Specifies the path to the dataset configuration file, which includes class information and the paths for training and validation images.*
 
 *In other words, the model training proceeds based on the contents of the `data.yaml` file. This process took approximately 2 hours.*  
 
 
 ![화면_캡처_2024-11-12_015103](https://github.com/user-attachments/assets/27c52b70-c484-4c08-942d-4bbe644f50c2)  
 
+---
+
 ## 결과(Results)  
 
 ### 1. 텐서보드(TensorBoard)  
 
-```
+```python
+# view Results from TensorBoard
 %load_ext tensorboard
 %tensorboard --logdir runs
 ```
+
 ![화면_캡처_2024-11-12_071447](https://github.com/user-attachments/assets/e42da432-973a-4ec2-adca-08ec6b7594a6)  
 
 Jupyter Notebook에서 TensorBoard를 실행하여 결과를 확인한다. TensorBoard dashboard가 열리면 모델 훈련의 진행 상황, 손실 그래프, 정확도 등의 지표를 시각적으로 확인할 수 있다.
@@ -228,35 +313,73 @@ Jupyter Notebook에서 TensorBoard를 실행하여 결과를 확인한다. Tenso
 
 ![results](https://github.com/user-attachments/assets/9be1634a-6eff-4a84-af0b-4c811070f783)  
 
+### 6. label batch
+
+![val_batch2_labels](https://github.com/user-attachments/assets/6189b6cd-d730-4098-bcf4-7620162d1a7b)
+
 링크를 통해 더 많은 결과를 확인 가능 
 
-*More results can be viewed through the file on the right.*
-
+*More results can be viewed through the file on the right.*  
 [EXP2](https://drive.google.com/drive/folders/12_YXtZsEaEA4LU8m3a0eXbQDVaupZp4D?usp=sharing) - go to GoogleDrive  
+
+---
 
 ## 탐지(Detect)  
 `yolov5`의 학습이 완료되었다면,  학습에 사용한 이미지와 비디오들을 감지(detect)한다.
 
-*Once the training of `yolov5` is complete, detect objects in the images and videos used for training.*
+*Once the training of `yolov5` is complete, detect objects in the images and videos used for training.*  
 
 - video detect method
-  ![스크린샷_2024-11-12_095349](https://github.com/user-attachments/assets/890069aa-8913-4184-b793-820773f4dece)
-- video detect result
+  ```python
+  #This path varies depending on the user.
+  !python detect.py --weights runs/train/exp2/weights/best.pt --source /content/drive/MyDrive/yolov5/video/video_1.mp4
+  ```
+  
+- video detect output
   ![스크린샷_2024-11-12_095613](https://github.com/user-attachments/assets/8cc09922-17ca-428a-9423-5d1b919b65d9)
 
-[Verified video 1 - result 1](https://youtube.com/shorts/Uke-PBQynwc?feature=share)  
-[Verified video 2 - result 2](https://youtube.com/shorts/c2rb6TWAViE)  
-[Verified video 3 - result 3](https://youtube.com/shorts/jicgc_UsZGw)  
+Detect_Result video  
+&nbsp; [Verified video 1](https://youtube.com/shorts/Uke-PBQynwc?feature=share)  
+&nbsp; [Verified video 2](https://youtube.com/shorts/c2rb6TWAViE?feature=share)  
+&nbsp; [Verified video 3](https://youtube.com/shorts/jicgc_UsZGw?feature=share)  
+&nbsp; [Verified video 4](https://youtube.com/shorts/V1xRYH_J4rQ?feature=share)  
+&nbsp; [Verified video 5](https://youtube.com/shorts/YXJ2HtT1iWM?feature=share)  
 
-- Image Detect Result
+[detect](https://drive.google.com/drive/folders/13wFPaY0pXwfUoBeJnAvXxmPbxGpWvlG0?usp=drive_link) - go to googleDrive  
 
-  학습에 사용되었던 이미지 982개 전체에 대해 객체 탐지를 수행하였다.
+---
 
-  그 중 임의로 선택한 2개 이미지의 탐지 결과를 아래에 나열하였다.
+Image Detect Result
 
-  *Object detection was performed on all 982 images used for training.*
+학습에 사용되었던 이미지 982개 전체에 대해 객체 탐지를 수행하였다.
 
-  *The detection results of six randomly selected images from this set are listed below.*
+그 중 임의로 선택한 2개 이미지의 탐지 결과를 아래에 나열하였다.
+
+*Object detection was performed on all 982 images used for training.*
+
+*The detection results of six randomly selected images from this set are listed below.* 
   
 ![8b5cd22e-0770-43b8-b9a6-b84049b3e429](https://github.com/user-attachments/assets/34e8fc35-2246-4b5e-9b4d-73540ca81fc9)
-![f90137f4-5f3d-49c8-8bf2-54fd9af370da](https://github.com/user-attachments/assets/c5562c11-b089-43af-b548-848977073463)
+![f90137f4-5f3d-49c8-8bf2-54fd9af370da](https://github.com/user-attachments/assets/c5562c11-b089-43af-b548-848977073463)  
+
+[see more](https://drive.google.com/drive/folders/13xB80xuIFD0sUOan4zkytTEJFSH8nIzC?usp=drive_link) - go to googleDrive  
+[see more notion](https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b)
+---
+
+# 마무리(Wrap up)
+
+모든 위험 요소 객체의 `Confidence Score` 는  높은 신뢰도 값을 가지고 있어, 같은 방식으로 주방 내 다른 위험 요소들도 높은 신뢰도 값으로 검출할 수 있음을 의미한다. 예를 들어 뜨거운 물체로 판단될 수 있는 냄비, 프라이팬 등과 같은 위험 요소들을 추가하여 모델을 더욱 발전시킬 수 있다.
+
+또는 다양한 각도에서 모양이 크게 다른 그릇,칼,가위의 학습량을 늘려 현재보다 더더욱 높은 신뢰도 값을 지 향 하는 것 또한 방법이다.
+
+시각장애인, 아동 등.. 주방 사용에 미숙한 이들이 최소한 심각한 상처 만은 받지 않도록 더 나아가 안전한 주방이 되도록 기대하는 마음으로 주제를 마무리한다.
+
+*The `confidence scores` for all hazardous objects are high, indicating that other potential hazards in the kitchen can also be detected with high confidence using the same approach. For instance, additional hazardous items like pots and frying pans, which may be identified as hot objects, can be added to further enhance the model.*
+
+*Alternatively, increasing the training volume for items like bowls, knives, and scissors, which vary greatly in shape from different angles, could be another approach to aim for even higher reliability than at present.*
+
+*In conclusion, with the hope of creating a safer kitchen environment so that visually impaired individuals, children, and others unfamiliar with kitchen use can avoid serious injuries, we wrap up this topic.*  
+
+---
+
+Thank you for reading until the end
