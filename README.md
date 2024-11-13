@@ -1,6 +1,7 @@
 # Nvidia AI Specialist Certification with yolov5
 
-"If you want a detailed view, check out the Notion report ->" [Go to Notion](https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b)
+If you want a detailed view, check out the Notion report -> 
+<a href="https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b" target="_blank">Go to Notion</a>
 
 ## **주제(Title)**
 
