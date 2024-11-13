@@ -319,8 +319,7 @@ Jupyter Notebook에서 TensorBoard를 실행하여 결과를 확인한다. Tenso
 
 링크를 통해 더 많은 결과를 확인 가능 
 
-*More results can be viewed through the file on the right.*  
-[EXP2](https://drive.google.com/drive/folders/12_YXtZsEaEA4LU8m3a0eXbQDVaupZp4D?usp=sharing) - go to GoogleDrive  
+*More results can be viewed through the file on the right.* [EXP2](https://drive.google.com/drive/folders/12_YXtZsEaEA4LU8m3a0eXbQDVaupZp4D?usp=sharing) - go to GoogleDrive  
 
 ---
 
