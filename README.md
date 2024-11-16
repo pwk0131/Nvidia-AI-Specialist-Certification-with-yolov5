@@ -1,7 +1,12 @@
 # Nvidia AI Specialist Certification with yolov5
 
-If you'd like a more detailed and polished view, check out the Notion report -> 
-<a href="https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b" target="blank">Go to Notion</a>  
+
+**If you'd like to give it a try, watch the Verbal Explanation Video inside the Guide.zip folder and follow along. Additional explanations can be found in the Readme file and the Notion Report.**
+
+**Upload the yolov5_learning_example.ipynb file from the zip folder to Google Colab and use it there.**  
+
+**If you'd like a more detailed and polished view, check out the Notion report -> 
+<a href="https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b" target="blank">Go to Notion</a>**  
 
 
 ## **주제(Title)**
