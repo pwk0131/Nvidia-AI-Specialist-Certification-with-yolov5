@@ -278,6 +278,9 @@ Detect_Result video
 &nbsp; [Verified video 3](https://youtube.com/shorts/jicgc_UsZGw?feature=share)  
 &nbsp; [Verified video 4](https://youtube.com/shorts/V1xRYH_J4rQ?feature=share)  
 &nbsp; [Verified video 5](https://youtube.com/shorts/YXJ2HtT1iWM?feature=share)  
+  
+&nbsp; [Jetson_ver.1](https://youtu.be/lnZq3YrI56k)  
+&nbsp; [Jetson_ver.2](https://youtu.be/zsvMhYvgttc)  
 
 [detect](https://drive.google.com/drive/folders/13wFPaY0pXwfUoBeJnAvXxmPbxGpWvlG0?usp=drive_link) - go to googleDrive  
 
