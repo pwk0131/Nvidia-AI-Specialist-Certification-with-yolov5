@@ -5,9 +5,11 @@
 
 **Upload the yolov5_learning_example.ipynb file from the zip folder to Google Colab and use it there.**  
 
-**If you'd like a more detailed and polished view, check out the Notion report -> 
+**If you'd like a more detailed and polished view, check out the Notion report ->
 <a href="https://island-lunge-8fe.notion.site/Nvidia-AI-Specialist-Certification-13b4e95f93fe80168053fc7688cde99b" target="blank">Go to Notion</a>**  
-<a href="https://drive.google.com/drive/folders/1Qstpo2MyTCT4j3pmtLvsWCGaPxG-Wltx?usp=drive_link" target="blank">Go to GoogleDrive(All the materials are here.)</a>**  
+
+**All the materials are here. ->
+<a href="https://drive.google.com/drive/folders/1Qstpo2MyTCT4j3pmtLvsWCGaPxG-Wltx?usp=drive_link" target="blank">Go to GoogleDrive</a>**  
 
 ## **Title**
 
