@@ -1,0 +1,9 @@
+names:  # Classes name
+- bowl
+- knife
+- scissores
+
+train: /content/drive/MyDrive/yolov5/Train/images  # train images 경로
+val: /content/drive/MyDrive/yolov5/Train/images # val images 경로
+
+nc: 3
